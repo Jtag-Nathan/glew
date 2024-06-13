@@ -73,7 +73,7 @@ GLboolean GLEWAPIENTRY glewGetExtension (const char* name)
 typedef const GLubyte* (GLAPIENTRY * PFNGLGETSTRINGPROC) (GLenum name);
 typedef void (GLAPIENTRY * PFNGLGETINTEGERVPROC) (GLenum pname, GLint *params);
 
-GLenum GLEWAPIENTRY glewContextInit (void)
+static GLenum GLEWAPIENTRY glewContextInit ()
 {
   PFNGLGETSTRINGPROC getString;
   const GLubyte* s;
